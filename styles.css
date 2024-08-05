@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Color de fondo negro */
+    color: #d4b36c; /* Color de texto principal */
+}
+
+.menu-container {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center; /* Centra el logo */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.menu {
+    background-color: #000; /* Fondo del menú negro */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    color: #fff; /* Color de texto blanco para las categorías */
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: default; /* Cambia el cursor para indicar que no es clickeable */
+}
+
+.menu ul li .category-title {
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #d4b36c; /* Línea dorada para el título de la categoría */
+}
+
+.menu ul li .category-items {
+    display: none; /* Ocultar las subcategorías por defecto */
+    padding-left: 20px;
+}
+
+.menu ul li.active .category-items {
+    display: block; /* Mostrar las subcategorías cuando está activo */
+}
+
+.menu ul li .category-items ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li .category-items ul li {
+    border-bottom: none; /* Eliminar la línea dorada entre ítems */
+    padding: 10px 0; /* Ajustar padding */
+    font-size: 14px; /* Ajustar tamaño de fuente si es necesario */
+    display: flex; /* Asegura que los ítems estén en una sola línea */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.item-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Espacia el nombre y el precio */
+    padding: 10px;
+    border-bottom: 1px solid #d4b36c95; 
+}
+
+.item-name {
+    width: 100%; /* Ancho fijo para el nombre del ítem */
+    text-align: left; /* Alinea el nombre del ítem a la izquierda */
+    letter-spacing: 2px;
+    font-weight: 50;
+}
+
+.item-price {
+    width: 30px; /* Ancho fijo para el precio */
+    color: #d4b36c; /* Color dorado para los precios */
+    text-align: right; /* Alinea el precio a la derecha */
+    white-space: nowrap; /* Evita el salto de línea */
+    font-weight: bold;
+}
+
+/* Remueve el borde inferior del título de la categoría cuando se expande */
+.menu ul li.active .category-title {
+    border-bottom: none;
+    color: #d4b36c;
+    font-size: 20px;
+    
+}
