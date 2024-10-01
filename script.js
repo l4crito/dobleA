@@ -1,13 +1,15 @@
 const menuData = {
     "costos": [
-        {"name": "Ron", "items": [
+        {"name": "RON", "items": [
             {"name": "Cuba Libre", "price": "$4,00"},
             {"name": "Pasion Daiquiri", "price": "$4,00"},
             {"name": "Mojito Cubano", "price": "$4,00"},
             {"name": "Mojito Maracuyá", "price": "$4,00"},
             {"name": "Mai-Tai", "price": "$4,00"},
             {"name": "Apple de Liria", "price": "$4,00"},
-            {"name": "Piña Colada", "price": "$5,00"},
+            {"name": "Piña Colada", "price": "$5,00"}
+        ]},
+        {"name": "VODKA", "items": [
             {"name": "Caipiroska", "price": "$4,00"},
             {"name": "Destornillador", "price": "$4,00"},
             {"name": "Sex on the beach", "price": "$4,00"},
@@ -17,21 +19,21 @@ const menuData = {
             {"name": "Martini Chocolate", "price": "$4,00"},
             {"name": "Apple Martini", "price": "$4,00"}
         ]},
-        {"name": "Whisky", "items": [
+        {"name": "WHISKY", "items": [
             {"name": "BeeGee", "price": "$5,00"},
             {"name": "Café Irlandés", "price": "$5,00"},
             {"name": "Daysi", "price": "$5,00"},
             {"name": "Whisky Sour", "price": "$5,00"},
             {"name": "Padrino", "price": "$5,00"}
         ]},
-        {"name": "Tequila", "items": [
+        {"name": "TEQUILA", "items": [
             {"name": "Tequila sunrice", "price": "$4,00"},
             {"name": "Nieblas del Caribe", "price": "$4,00"},
             {"name": "Paloma", "price": "$4,00"},
             {"name": "Margarita", "price": "$4,00"},
             {"name": "Pasión Margarita", "price": "$4,00"}
         ]},
-        {"name": "Gin", "items": [
+        {"name": "GIN", "items": [
             {"name": "Melissa", "price": "$4,00"},
             {"name": "Alexander", "price": "$4,00"},
             {"name": "Gimlet", "price": "$4,00"},
@@ -39,28 +41,37 @@ const menuData = {
             {"name": "Tom Collins", "price": "$4,00"}
         ]},
         {"name": "DE LA CASA", "items": [
+            {"name": "Wisky doble A", "price": "$6,00"},
             {"name": "Orgasmo AA", "price": "$7,00"},
-            {"name": "SaltAAmontes", "price": "$7,00"},
+            {"name": "Saltamontes AA", "price": "$7,00"},
             {"name": "Long Iceland Iced Tea", "price": "$7,00"},
             {"name": "Doble A", "price": "$7,00"},
             {"name": "Satanas", "price": "$7,00"},
-            {"name": "Micheladas", "price": "$3,50"}
+            {"name": "Michelada limón", "price": "$3,50"},
+            {"name": "Michelada maracuyá", "price": "$4,00"}
         ]},
-        {"name": "Cervezas", "items": [
+        {"name": "CERVEZAS", "items": [
+            {"name": "Coronita 210ml", "price": "$1,50"},
             {"name": "Club 330ml", "price": "$2,00"},
             {"name": "Club 550ml", "price": "$2,75"},
-            {"name": "Coronita 210ml", "price": "$1,50"},
-            {"name": "Corona 355ml", "price": "$3,50"},
-            {"name": "Modelo 355ml", "price": "$4,00"},
-            {"name": "Stella Artois 330ml", "price": "$3,50"}
+            {"name": "Corona 355ml", "price": "$4,00"},
+            {"name": "Stella Artois 330ml", "price": "$4,00"},
+            {"name": "Modelo 355ml", "price": "$4,50"}
         ]},
-        {"name": "Picaditas", "items": [
-            {"name": "Nachos con queso", "price": "$3,50"},
-            {"name": "Nacnos con guacamole", "price": "$3,50"},
-            {"name": "Papitas AA", "price": "$3,50"}
+        {"name": "SHOTS", "items": [
+            {"name": "Cucaracha 1 oz", "price": "$1,00"},
+            {"name": "Cucaracha 1.5 oz", "price": "$1,50"},
+            {"name": "6 Shots 1 oz", "price": "$5,00"}
+        ]},
+        {"name": "PICADITAS", "items": [
+            {"name": "Nachos con queso", "price": "$4,00"},
+            {"name": "Nachos con guacamole", "price": "$4,00"},
+            {"name": "Papitas AA", "price": "$4,00"},
+            {"name": "Volquetero", "price": "$5,00"}
         ]}
     ]
 };
+
 function renderMenu() {
     const menuItems = document.getElementById('menu-items');
     menuItems.innerHTML = '';
